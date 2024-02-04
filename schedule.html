@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Расписание | Футбольный клуб РБ Сочи</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #F0DEB6;
+        }
+
+        header, footer {
+            background-color: #C60A3C;
+            color: #F0DEB6;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        #logo {
+            width: 100px; /* Adjust the size of your logo */
+            margin-left: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #F0DEB6;
+            font-weight: bold;
+        }
+
+        .schedule-container {
+            background-color: #fff;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .match {
+            border-bottom: 1px solid #ddd;
+            padding: 20px;
+        }
+
+        .match:last-child {
+            border-bottom: none;
+        }
+
+        .match.large {
+            font-size: 1.2em;
+        }
+
+        .match.small {
+            font-size: 0.9em;
+        }
+
+        .match img {
+            width: 50px; /* Adjust the size of the team logos */
+            height: auto;
+            vertical-align: middle;
+        }
+
+        .match-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .match-details {
+            text-align: left;
+            font-style: italic;
+            color: #555;
+        }
+
+        .match-time {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="РБ Сочи" id="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="players.html">Игроки</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <!-- Other menu items -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="schedule-container">
+            <!-- Upcoming match in large size -->
+            <div class="match large">
+                <div class="match-info">
+                    <img src="images/logo.png" alt="Team 1">
+                    <span class="match-time">Ближайший матч - 17:00, 23 Июня</span>
+                    <img src="images/logo.png" alt="Team 2">
+                </div>
+                <div class="match-details">
+                    <p>Стадион: Стадион Сочи</p>
+                </div>
+            </div>
+
+            <!-- Other matches in smaller size -->
+            <div class="match small">
+                <div class="match-info">
+                    <img src="images/logo.png" alt="Team 3">
+                    <span class="match-time">20:00, 30 Июня</span>
+                    <img src="images/logo.png" alt="Team 4">
+                </div>
+                <div class="match-details">
+                    <p>Стадион: Другой Стадион</p>
+                </div>
+            </div>
+
+            <div class="match small">
+                <div class="match-info">
+                    <img src="images/logo.png" alt="Team 5">
+                    <span class="match-time">18:00, 6 Июля</span>
+                    <img src="images/logo.png" alt="Team 6">
+                </div>
+                <div class="match-details">
+                    <p>Стадион: Стадион Сочи</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© Футбольный клуб РБ Сочи, 2024</p>
+    </footer>
+</body>
+</html>

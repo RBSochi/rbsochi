@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>О клубе | Футбольный клуб РБ Сочи</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #F0DEB6;
+        }
+
+        header, footer {
+            background-color: #C60A3C;
+            color: #F0DEB6;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        #logo {
+            width: 100px;
+            margin-left: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #F0DEB6;
+            font-weight: bold;
+        }
+
+        .content {
+            background-color: #fff;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-header {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        .navigation-menu {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            padding: 10px;
+            background: #C60A3C;
+            color: #fff;
+        }
+
+        .navigation-menu a {
+            color: #F0DEB6;
+            display: block;
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        .navigation-menu a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="РБ Сочи" id="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="players.html">Игроки</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <li><a href="about.html">О клубе</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="navigation-menu">
+        <a href="#history">История клуба</a>
+        <a href="#management">Управление</a>
+        <a href="#achievements">Достижения</a>
+        <!-- Add more navigation links if needed -->
+    </div>
+
+    <main class="content">
+        <section id="history" class="section">
+            <h2 class="section-header">История клуба</h2>
+            <p>Текст о истории клуба...</p>
+        </section>
+
+        <section id="management" class="section">
+            <h2 class="section-header">Управление</h2>
+            <p>Информация об управлении клубом...</p>
+        </section>
+
+        <section id="achievements" class="section">
+            <h2 class="section-header">Достижения</h2>
+            <p>Описание достижений клуба...</p>
+        </section>
+
+        <!-- Add more sections if needed -->
+    </main>
+
+    <footer>
+        <p>© Футбольный клуб РБ Сочи, 2024</p>
+    </footer>
+</body>
+</html>

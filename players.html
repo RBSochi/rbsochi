@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игроки | Футбольный клуб РБ Сочи</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #F0DEB6;
+        }
+
+        header {
+            background-color: #C60A3C;
+            color: #F0DEB6;
+            padding: 10px 0;
+        }
+
+        #logo {
+            width: 100px; /* Размер логотипа */
+            margin-left: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #F0DEB6;
+            font-weight: bold;
+        }
+
+        main {
+            background-color: #FFFFFF;
+            padding: 20px;
+        }
+
+        .player-category {
+            background-color: #F0DEB6;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .player-card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 10px;
+            padding: 15px;
+            display: inline-block;
+            width: calc(25% - 20px); /* 4 игрока в ряд */
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .player-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .player-card h3,
+        .player-card p {
+            margin: 5px 0;
+        }
+
+        /* Отзывчивость: на маленьких экранах карточки будут в один столбец */
+        @media (max-width: 600px) {
+            .player-card {
+                width: 100%;
+            }
+        }
+
+        footer {
+            background-color: #C60A3C;
+            color: #F0DEB6;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="РБ Сочи" id="logo">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="players.html">Игроки</a></li>
+                <!-- Остальные вкладки -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="goalkeepers" class="player-category">
+            <h2>Вратари</h2>
+            <head>
+    <meta charset="UTF-8">
+    <style>
+        .player-card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 10px;
+            padding: 15px;
+            display: inline-block;
+            width: calc(25% - 20px); /* 4 игрока в ряд */
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .player-card img {
+            max-width: 100px; /* Размер изображения игрока */
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .player-card h3 {
+            margin: 5px 0;
+        }
+
+        .player-card p {
+            margin: 5px 0;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="player-card">
+        <img src="images/player.png" alt="Имя Фамилия">
+        <h3>Андрей Джуди</h3>
+        <p>Китай</p>
+    </div>
+</body>
+</html>
+        </section>
+
+        <section id="defenders" class="player-category">
+            <h2>Защитники</h2>
+            <!-- Карточки защитников (повторить 8 раз) -->
+        </section>
+
+        <section id="midfielders" class="player-category">
+            <h2>Полузащитники</h2>
+            <!-- Карточки полузащитников (повторить 5 раз) -->
+        </section>
+
+        <section id="forwards" class="player-category">
+            <h2>Нападающие</h2>
+            <!-- Карточки нападающих (повторить 5 раз) -->
+        </section>
+    </main>
+    <footer>
+        <p>© Футбольный клуб РБ Сочи, 2024</p>
+    </footer>
+</body>
+</html>
